@@ -14,6 +14,17 @@ pipeline {
 		//Code ends for stage Clean
 		
 
+	//Code starts for stage Compile
+		stage('Compile') {
+            steps {
+                sh 'mvn compile'
+            }
+        }
+		//Code ends for stage Compile
+		
+		
+			
+		
 		//Code starts for stage Unit Test
         stage('Unit Test') {
             steps {
